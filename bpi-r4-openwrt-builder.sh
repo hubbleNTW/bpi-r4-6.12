@@ -5,10 +5,10 @@ rm -rf openwrt
 rm -rf mtk-openwrt-feeds
 
 git clone --branch openwrt-25.12 https://github.com/openwrt/openwrt.git openwrt
-cd openwrt; git checkout 00dcdd7451487dfb63c6c3bbd649a547c76e1a13; cd -;		#firmware: Add support for Airoha EN7581/AN7583 NPU variant firmware
+cd openwrt; git checkout 05b6a93173135ab86f82663523b531577f5e6062; cd -;		#labeler: Update dependencies
 
 git clone --branch master https://git01.mediatek.com/openwrt/feeds/mtk-openwrt-feeds
-cd mtk-openwrt-feeds; git checkout 95d10b2875cde36924023380ac098dd5664dcdf3; cd -;	#[openwrt-25][common][doc][Update documentation for OpenWrt 25.12]
+cd mtk-openwrt-feeds; git checkout 14dc256bd536382ea427712eb3896e669beeae71; cd -;	#[kernel-6.12][common][hnat][Add bridge forward 3-tuple HNAT offload support]
 
 #\cp -r my_files/feed_revision mtk-openwrt-feeds/autobuild/unified/
 
