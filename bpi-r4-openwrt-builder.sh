@@ -5,7 +5,7 @@ rm -rf openwrt
 rm -rf mtk-openwrt-feeds
 
 git clone --branch openwrt-25.12 https://github.com/openwrt/openwrt.git openwrt
-cd openwrt; git checkout 05b6a93173135ab86f82663523b531577f5e6062; cd -;		#labeler: Update dependencies
+cd openwrt; git checkout d266501ad6188cce279a487b1ce61f4f327cd496; cd -;		#labeler: Update dependencies
 
 git clone --branch master https://git01.mediatek.com/openwrt/feeds/mtk-openwrt-feeds
 cd mtk-openwrt-feeds; git checkout 14dc256bd536382ea427712eb3896e669beeae71; cd -;	#[kernel-6.12][common][hnat][Add bridge forward 3-tuple HNAT offload support]
